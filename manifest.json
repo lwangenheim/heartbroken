@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Heartbroken",
+  "version": "1.1",
+  "description": "This will change the favorite icon back to a green heart on Imgur",
+
+  "browser_action": {
+    "default_icon": "heart.png"
+  },
+  
+  "content_scripts": [ { 
+    "js": [ "jquery.min.js", "background.js"],
+    "matches": [ "http://imgur.com/*", "https://imgur.com/*"]
+  }]
+}
+
